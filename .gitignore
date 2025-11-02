@@ -1,0 +1,47 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+venv/
+.env
+.env.local
+.venv/
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Docker
+data/db/
+*.pid
+*.log
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+backend/.env
+frontend/.env
