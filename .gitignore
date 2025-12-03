@@ -44,4 +44,12 @@ htmlcov/
 
 # Environment and secrets
 backend/.env
+backend/.env.production
 frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Deployment artifacts
+deployment-package/
+*.tar.gz
+*.zip

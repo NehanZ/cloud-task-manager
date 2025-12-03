@@ -1,13 +1,14 @@
 # 🧩 Cloud Task Manager
 
-A full-stack **Task Management App** built with **FastAPI**, **Next.js**, and **PostgreSQL**, containerized using **Docker Compose** and ready for AWS deployment.
+A production-ready **Task Management App** built with **FastAPI**, **Next.js**, and **PostgreSQL**, designed for AWS cloud deployment with environment-based configuration.
 
-This project is designed as a **DevOps learning project** to practice:
-- Containerization (Docker)
-- CI/CD
-- Cloud deployment (AWS EC2)
-- Infrastructure as Code (optional with Terraform)
-- Basic monitoring and logs
+This project demonstrates **production-ready development practices**:
+- ✅ Environment-based configuration (no hardcoded endpoints)
+- ✅ Centralized API management  
+- ✅ Production-optimized Docker containers
+- ✅ AWS RDS + S3 + CloudFront ready
+- ✅ Security best practices
+- ✅ Health checks and monitoring
 
 ---
 
@@ -119,9 +120,6 @@ npm run dev
 ## 🛠️ Future Enhancements
 
 - [ ] Add CI/CD pipeline (GitHub Actions)
-- [ ] Deploy to AWS EC2
-- [ ] Implement Terraform for IaC
 - [ ] Add monitoring (Prometheus/Grafana)
-- [ ] Add authentication (JWT)
 
 ---

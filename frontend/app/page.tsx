@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { ENDPOINTS, API_CONFIG } from "../lib/api";
 
 interface Task {
   id: number;
@@ -12,11 +13,15 @@ export default function Home() {
   const [title, setTitle] = useState<string>("");
 
   useEffect(() => {
-    axios.get<Task[]>("http://localhost:8000/api/tasks").then((res) => setTasks(res.data));
+    axios.get<Task[]>(ENDPOINTS.TASKS, {
+      headers: API_CONFIG.DEFAULT_HEADERS
+    }).then((res) => setTasks(res.data));
   }, []);
 
   const addTask = async () => {
-    const res = await axios.post<Task>(`http://localhost:8000/api/tasks?title=${title}`);
+    const res = await axios.post<Task>(`${ENDPOINTS.TASKS}?title=${title}`, null, {
+      headers: API_CONFIG.DEFAULT_HEADERS
+    });
     setTasks([...tasks, res.data]);
     setTitle("");
   };
